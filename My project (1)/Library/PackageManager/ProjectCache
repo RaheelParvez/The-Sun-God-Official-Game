@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638366651330000000
+      ticks: 638369988730000000
     m_Hash: 23942653
   m_LockFileStatus:
     m_FilePath: /Users/21853/Documents/GitHub/The-Sun-God-Official-Game/My project
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638366651330000000
+      ticks: 638369988730000000
     m_Hash: 2592808925
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3187,6 +3187,7 @@ m_ResolvedPackages:
     - 1.3.8
     - 1.3.9
     - 1.4.0
+    - 1.4.1
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3203,6 +3204,7 @@ m_ResolvedPackages:
     - 1.3.8
     - 1.3.9
     - 1.4.0
+    - 1.4.1
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
