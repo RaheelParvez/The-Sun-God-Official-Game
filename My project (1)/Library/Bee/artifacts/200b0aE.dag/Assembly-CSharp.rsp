@@ -350,6 +350,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/AimScript.cs"
 "Assets/bob.cs"
 "Assets/camerassd.cs"
 "Assets/camove.cs"
@@ -415,6 +416,7 @@
 "Assets/Sun_Temple/Scripts/FPSController/CursorLock.cs"
 "Assets/Sun_Temple/Scripts/MoveToLayer.cs"
 "Assets/Sun_Temple/Scripts/WindSwaySimple.cs"
+"Assets/sway.cs"
 -langversion:9.0
 
 /deterministic
