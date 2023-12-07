@@ -1,10 +1,12 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class aroor : MonoBehaviour
 {
     public GameObject arr;
+    public GameObject platt;
+    public ParticleSystem system;
     public int weee;
     public float off;
     public float offy;
@@ -32,8 +34,9 @@ public class aroor : MonoBehaviour
                 timer = float.PositiveInfinity;
                 Debug.Log("ready");
                 ready = true;
+                system.Play();
 
-              
+
             }
         }
         else
@@ -47,13 +50,15 @@ public class aroor : MonoBehaviour
                 Fire();
             }
             ready = false;
+            system.Stop();
         }
+      
 
     }
     void Fire()
     {
         GameObject naw = Instantiate(arr) as GameObject;
-        Vector3 high = transform.position;
+        Vector3 high = platt.transform.position;
         high += Camera.main.transform.forward * off;
         high.y += offy;
         naw.transform.position = high;
