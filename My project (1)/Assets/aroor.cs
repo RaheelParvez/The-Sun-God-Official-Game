@@ -9,7 +9,8 @@ public class aroor : MonoBehaviour
     public float off;
     public float offy;
     float timer;
-    float holdDur = 3f;
+    float holdDur = 1f;
+    private bool ready;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,7 @@ public class aroor : MonoBehaviour
                
                 timer = float.PositiveInfinity;
                 Debug.Log("ready");
-                Fire();
+                ready = true;
 
               
             }
@@ -39,6 +40,15 @@ public class aroor : MonoBehaviour
         {
             timer = float.PositiveInfinity;
         }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (ready == true)
+            {
+                Fire();
+            }
+            ready = false;
+        }
+
     }
     void Fire()
     {
