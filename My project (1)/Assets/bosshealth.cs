@@ -36,8 +36,10 @@ public class Bossbar : MonoBehaviour
                 boss.GetComponent<Animator>().Play("Mk_hitfFfront");
             }
             
+            
         }
     }
+    
 
     public void dmg(float dam)
     {

@@ -358,6 +358,7 @@
 "Assets/bosshealth.cs"
 "Assets/camerassd.cs"
 "Assets/camove.cs"
+"Assets/delets.cs"
 "Assets/health.cs"
 "Assets/Low Poly Fruits/resources/fruits_tester.cs"
 "Assets/MainMenuButtons.cs"

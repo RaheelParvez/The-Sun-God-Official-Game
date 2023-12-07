@@ -9,6 +9,7 @@ public class bananaShoot : MonoBehaviour
     public int speed;
     float timer;
     float holdDur = 1f;
+    public int bana = 200;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class bananaShoot : MonoBehaviour
         {
             BANANA();
             timer = Time.time;
+            holdDur -= 0.01f;
         }
 
     }
