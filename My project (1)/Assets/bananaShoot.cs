@@ -25,8 +25,9 @@ public class bananaShoot : MonoBehaviour
         {
             BANANA();
             timer = Time.time;
-            holdDur -= 0.01f;
+            
         }
+
 
     }
 
