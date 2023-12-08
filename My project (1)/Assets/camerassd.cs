@@ -15,5 +15,6 @@ public class camthingery : MonoBehaviour
     void Update()
     {
         transform.position = wawa.position;
+        transform.rotation = wawa.rotation;
     }
 }
