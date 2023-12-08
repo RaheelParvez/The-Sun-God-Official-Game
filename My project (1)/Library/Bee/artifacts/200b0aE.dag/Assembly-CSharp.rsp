@@ -365,6 +365,7 @@
 "Assets/Mking/mScripts/MKdemoCtrl.cs"
 "Assets/movement.cs"
 "Assets/prooo.cs"
+"Assets/Run.cs"
 "Assets/Sun_Temple/PostProcessing/Runtime/Attributes/GetSetAttribute.cs"
 "Assets/Sun_Temple/PostProcessing/Runtime/Attributes/MinAttribute.cs"
 "Assets/Sun_Temple/PostProcessing/Runtime/Attributes/TrackballAttribute.cs"
