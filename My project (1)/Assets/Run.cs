@@ -5,27 +5,33 @@ using UnityEngine;
 public class Run : MonoBehaviour
 
 {
-    public GameObject monkey;
-    public GameObject play;
-    public Transform Play;
-    public float speed;
-    public float turnRate;
-    public Transform target;
-    
    
+     public Transform target;
+    public float rotationSpeed = 5f;
+    public float movementSpeed = 5f;
 
-    // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-        
+        transform.rotation = Quaternion.identity;
     }
 
-    // Update is called once per frame
-    void Update()
+   void Update()
     {
-       transform.LookAt(target);
-       transform.position = Vector3.MoveTowards(transform.position, play.transform.position, speed);
+        if (target != null)
+        {
+            // Calculate the direction to the target
+            Vector3 directionToTarget = target.position - transform.position;
 
+            // Calculate the rotation needed to face the target
+            Quaternion targetRotation = Quaternion.LookRotation(-directionToTarget);  // Invert the direction
+
+            // Smoothly interpolate the current rotation towards the target rotation
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            // Move towards the target
+            transform.position = Vector3.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+        }
     }
-
 }
+
+
