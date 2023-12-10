@@ -33,7 +33,7 @@ public class Bossbar : MonoBehaviour
             Debug.Log("dmg" + damage);
             if (oww)
             {
-                boss.GetComponent<Animator>().Play("Mk_hitfFfront");
+                boss.GetComponent<Animation>().Play("Mk_hitfFfront");
             }
             
             
