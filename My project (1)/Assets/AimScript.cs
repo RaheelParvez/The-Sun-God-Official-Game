@@ -20,18 +20,18 @@ public class AimingScript : MonoBehaviour
         {
             if (!Input.GetKey(KeyCode.LeftShift))
             {
-                Gun.GetComponent<Animation>().Play("Aim");
+                Gun.GetComponent<Animator>().Play("Aim");
             }
             
         }
 
         if (Input.GetMouseButtonUp(1))
         {
-            Gun.GetComponent<Animation>().Play("New State");
+            Gun.GetComponent<Animator>().Play("New State");
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Gun.GetComponent<Animation>().Play("New State");
+            Gun.GetComponent<Animator>().Play("New State");
         }
     }
 }
